@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_preview_preview_statuses",
+  "info": {
+    "displayName": "PreviewStatus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "IsUpdated": {
+      "type": "boolean"
+    },
+    "IsSuccess": {
+      "type": "boolean"
+    },
+    "IsUpdating": {
+      "type": "boolean",
+      "default": false
+    },
+    "BuiltStatus": {
+      "type": "enumeration",
+      "enum": [
+        "building",
+        "waiting",
+        "null"
+      ],
+      "default": "null"
+    }
+  }
+}

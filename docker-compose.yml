@@ -1,0 +1,13 @@
+version: '1.0.0'
+services:
+  staging.auto_merge_system:
+    container_name: "staging.auto_merge_system"
+    # image: ${SERVICE_NAME}:${SERVER_VERSION}
+    image: auto_merge_system:v1.13.1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        name: 2
+    ports:
+      - 1338:1337

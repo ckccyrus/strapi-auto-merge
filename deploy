@@ -1,0 +1,5 @@
+#!/bin/bash
+cd -- "$(dirname "$BASH_SOURCE")"
+pwd;
+docker-compose -p "micro_services" up --build -d 
+exit;

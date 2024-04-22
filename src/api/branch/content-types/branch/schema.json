@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branches",
+  "info": {
+    "singularName": "branch",
+    "pluralName": "branches",
+    "displayName": "Branch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Parent": {
+      "type": "string"
+    },
+    "State": {
+      "type": "enumeration",
+      "enum": [
+        "success",
+        "fail",
+        "pending"
+      ],
+      "required": true,
+      "default": "success"
+    },
+    "InCharge": {
+      "type": "string"
+    },
+    "PreviewStatus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "preview.preview-status",
+      "required": true
+    },
+    "PreviewCommit": {
+      "type": "component",
+      "repeatable": false,
+      "component": "preview.preview-commit",
+      "required": true
+    },
+    "BuiltStatus": {
+      "displayName": "BranchStatus",
+      "type": "component",
+      "repeatable": false,
+      "component": "status.branch-status",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "MergeFailCommitMessage": {
+      "type": "richtext"
+    },
+    "LaunchDate": {
+      "type": "date"
+    },
+    "ImplementationDate": {
+      "type": "date"
+    },
+    "FollowUp": {
+      "type": "richtext"
+    },
+    "RunAutomation": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

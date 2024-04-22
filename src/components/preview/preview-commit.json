@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_preview_preview_commits",
+  "info": {
+    "displayName": "PreviewCommit",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "MergeCommit": {
+      "type": "text",
+      "default": " "
+    },
+    "NewPreviewCommit": {
+      "type": "text"
+    },
+    "NewCommitMessage": {
+      "type": "text"
+    },
+    "NewCommitDate": {
+      "type": "datetime"
+    }
+  }
+}

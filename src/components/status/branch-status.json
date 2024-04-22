@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_status_branch_statuses",
+  "info": {
+    "displayName": "BranchStatus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "IsBuilt": {
+      "type": "boolean",
+      "default": false
+    },
+    "QaStatus": {
+      "type": "enumeration",
+      "enum": [
+        "onHold",
+        "verified",
+        "testing",
+        "null"
+      ],
+      "default": "null"
+    },
+    "ProgressStatus": {
+      "type": "enumeration",
+      "enum": [
+        "ready",
+        "todo",
+        "null"
+      ],
+      "default": "null"
+    },
+    "fileHash": {
+      "type": "json"
+    }
+  }
+}

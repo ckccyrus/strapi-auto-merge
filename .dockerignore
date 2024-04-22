@@ -1,0 +1,7 @@
+.cache
+.editorconfig
+dist
+node_modules
+.env
+.env.example
+.strapi-updater.json

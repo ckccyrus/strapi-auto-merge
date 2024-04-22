@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "live_pause_statuses",
+  "info": {
+    "singularName": "live-pause-status",
+    "pluralName": "live-pause-statuses",
+    "displayName": "LivePauseStatus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LastTriggerUser": {
+      "type": "string"
+    },
+    "LastTriggerDate": {
+      "type": "datetime"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "live",
+        "paused"
+      ]
+    }
+  }
+}
